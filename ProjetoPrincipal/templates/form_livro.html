@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Cadastro de livros{% endblock %}
+
+{% block content %}
+    <h1>Novo livro</h1>
+    <form method="post" action="{{ url_for('form_livro') }}">
+        <label>Título</label>
+        <input type="text" name="titulo" required>
+        
+        <button type="submit">Salvar</button>
+    </form>
+{% endblock %}
